@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="main-header">
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="images.jpg " alt="business" width="80px" height="80px">
+                </a>
+            </div>
+            <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="s" placeholder="search for ...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+        <nav class="main-menu">
+            <ul class="mobile-menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#" class="toggler">+</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a>
+                <ul class="drop">
+                    <li><a href="#">service one</a></li>
+                    <li><a href="#">service two</a></li>
+                    <li><a href="#">service three</a></li>
+                    <li><a href="#">service four</a></li>
+    
+                </ul>
+            </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+            </ul>
+        </nav>
+    
+   
+ <section class="g-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57493.45229351424!2d68.62412629527749!3d25.75930560570356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394bee48b97d7041%3A0x4627ccdb667698e0!2sTando%20%C4%80dam%2C%20Sanghar%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1723204653814!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </section>
+    
+
+<section class="contact-details">
+    <div class="contact-form">
+        <form action="" method="post"> 
+            <label for="c_name">Name:
+                <input type="text" name="c_name" id="c_name" placeholder="Name">
+            </label>
+            <label for="c_emial">Email:
+                <input type="email" name="c_email" id="c_email" placeholder="Email">
+            </label>
+            <label for="c_phone">Phone:
+                <input type="tel" name="c_phone" id="c_phone" placeholder="phone">
+            </label>
+            <label for="c_message">
+                Message:
+               <textarea name="c_message" id="c_message" cols="30" rows="5"></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="time-contact">
+        <h3>Timings</h3>
+        <p><strong>mon - sat</strong> <time datetime="09:00"> 09:00AM </time>- <time datetime="17:00" > 05:00PM</time></p>
+        <hr>
+        <h3>Contact</h3>
+        <p><a href="abcxyz@gmail.cpm">abcxyz@gmail.cpm</a></p>
+    </div>
+</section>
+
+    <section class="footer-widget-holder">
+        <div class="footer-widget">
+            <a href="#">
+                <img src="images.jpg" alt="cool" width="50px" height="50px">
+            </a>
+            <h3>Address</h3>
+            <address>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, facilis.
+            </address>
+        </div>
+        <div class="footer-widget">
+            <h4>sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p><small>Copyright &copy; 2025</small></p>
+    </footer>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+    $('.main-menu > ul:nth-of-type(2)').hide();
+    $('.toggler').click(function(){
+        $('.main-menu > ul:nth-of-type(2)').toggle();
+        $('.drop').css({'display':'block','position':'relative'});
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="main-header">
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="images.jpg " alt="business" width="80px" height="80px">
+                </a>
+            </div>
+            <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="s" placeholder="search for ...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+        <nav class="main-menu">
+            <ul class="mobile-menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#" class="toggler">+</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a>
+                <ul class="drop">
+                    <li><a href="#">service one</a></li>
+                    <li><a href="#">service two</a></li>
+                    <li><a href="#">service three</a></li>
+                    <li><a href="#">service four</a></li>
+    
+                </ul>
+            </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+            </ul>
+        </nav>
+    
+   
+   <section class="about-holder">
+    <article class="about">
+        <h1>About us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos mollitia necessitatibus perspiciatis laudantium quisquam libero veritatis aliquam accusantium iusto! Numquam eveniet sit animi, voluptate ab saepe dolorem hic laboriosam ut?</p>
+        <p>Quas aspernatur aut dolore id labore rem error explicabo ratione temporibus ducimus sit dolorum et animi magnam, sint velit, quibusdam, voluptatem eaque molestiae maxime aperiam ea ab nobis! Numquam, officiis?</p>
+        <p>Non aliquid dolorem ex quia inventore dolorum quod possimus et quae accusantium? Unde assumenda laudantium nesciunt aut magnam, minus dicta perferendis consectetur sunt, neque reiciendis quod, impedit vel amet necessitatibus!</p>
+        <p>Itaque officia illo sequi facere veniam quis voluptates, corporis id tempore saepe possimus ipsum corrupti assumenda recusandae aperiam, quae quia numquam magni perspiciatis consequatur excepturi tenetur. A soluta veritatis cum!</p>
+        <p>Amet sit sunt earum aliquid explicabo quidem nostrum fugit, dolor inventore? Veniam quisquam aut sequi dicta sed doloribus nisi accusantium. Dolorum doloremque beatae quam adipisci nobis reprehenderit voluptates optio quidem.</p>
+        <p>Id recusandae modi magnam nobis ipsum consequatur rem fugiat quia non beatae voluptatibus nesciunt, saepe aut in dolore hic nulla odit rerum! Consequatur neque illum culpa, quisquam saepe quidem ullam.</p>
+    </article>
+   </section>
+    
+    <section class="footer-widget-holder">
+        <div class="footer-widget">
+            <a href="#">
+                <img src="images.jpg" alt="cool" width="50px" height="50px">
+            </a>
+            <h3>Address</h3>
+            <address>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, facilis.
+            </address>
+        </div>
+        <div class="footer-widget">
+            <h4>sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p><small>Copyright &copy; 2025</small></p>
+    </footer>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+    $('.main-menu > ul:nth-of-type(2)').hide();
+    $('.toggler').click(function(){
+        $('.main-menu > ul:nth-of-type(2)').toggle();
+        $('.drop').css({'display':'block','position':'relative'});
+    });
+});
+
+</script>
+
+</body>
+</html>
