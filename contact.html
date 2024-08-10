@@ -129,7 +129,11 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
 <script>
-   $(document).ready(function() { ('#adaptive').lightSlider({ true, true $ adaptiveHeight: item: 1, slideMargin: 0, }); function toggleMenu() { (window).width() <= 750) { loop: if ($ $('.main-menu > ul:nth-of-type(2)').hide(); } else { ('.main-menu > ul:nth-of-type(2)').show(); } // Initial check Toggler click event { toggleMenu(); $ } // $('.toggler').click(function() $('.main-menu > ul:nth-of-type(2)').toggle(); $('.drop').css({'display':'block', 'position': 'relative'}); }); // Window resize event (window).resize(function() { toggleMenu(); }); 
+   $(document).ready(function() { ('#adaptive').lightSlider({ true, true $ adaptiveHeight: item: 1, slideMargin: 0, }); function toggleMenu() { (window).width() <= 750) { loop: if ($ $('.main-menu > ul:nth-of-type(2)').hide(); } else { ('.main-menu > ul:nth-of-type(2)').show(); }
+ // Initial check Toggler click event { toggleMenu(); $ } // 
+$('.toggler').click(function()
+$('.main-menu > ul:nth-of-type(2)').toggle(); $('.drop').css({'display':'block', 'position': 'relative'}); }); 
+// Window resize event (window).resize(function() { toggleMenu(); }); 
 });
 </script>
 
