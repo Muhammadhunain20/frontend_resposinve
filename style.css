@@ -142,8 +142,7 @@ width: 100px;
 }
 .services-holder, .products-holder{
   display: grid;
-  grid-template-columns: auto auto auto;
-
+  grid-template-columns: auto auto auto;
 }
 .service,.product{
   padding: 20px;
@@ -203,7 +202,12 @@ color: white;
   display: none !important;
 
 }
-.main-menu > ul { padding: 0px; margin: 0px; list-style-type: none; display: flex; justify-content: start; 
+.main-menu > ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex; /* Ensure display is set to flex */
+    justify-content: start;
 }
 @media screen and (max-width:750px) {
   .main-header{
