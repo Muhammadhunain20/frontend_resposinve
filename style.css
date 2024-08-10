@@ -203,6 +203,8 @@ color: white;
   display: none !important;
 
 }
+.main-menu > ul { padding: 0px; margin: 0px; list-style-type: none; display: flex; justify-content: start; 
+}
 @media screen and (max-width:750px) {
   .main-header{
     display: flex;
